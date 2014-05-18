@@ -63,7 +63,7 @@ int main()
   std::cout << json << std::endl;
 
   // Load an object from a json string.
-  std::string json_string = R"json({"name":"John", "age": 12})json";
+  std::string json_string = R"json({\"name\":\"John\", \"age"\: 12})json";
   auto test = iod(name = "", age = int());
   iod_from_json(test, json_string);
 
